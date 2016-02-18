@@ -1,8 +1,8 @@
-# Pull base image.
-FROM elasticsearch:1.6
+# Pull base image
+FROM elasticsearch:2.2
 
-# Install HEAD plugin
-RUN /usr/share/elasticsearch/bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.6.0
+# Install AWS plugin
+RUN /usr/share/elasticsearch/bin/plugin install cloud-aws
 
 # Add default config file
 ADD elasticsearch.yml /usr/share/elasticsearch/config/
