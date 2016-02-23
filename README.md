@@ -4,13 +4,12 @@ Based on the official Docker Elasticsearch image with the Amazon AWS plugin and
 some configuration defaults added.
  
  * https://registry.hub.docker.com/_/elasticsearch/
- * https://github.com/elastic/elasticsearch-cloud-aws
 
 ## Usage
 
 ```
 docker run --net=host \
-  meltwater/elasticsearch-aws \
+  appbase/elasticsearch-aws \
   -Des.cloud.aws.access_key=my-access-key-id \
   -Des.cloud.aws.secret_key=my-secret-access-key \
   -Des.cloud.aws.region=us-east-1 \
